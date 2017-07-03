@@ -8,10 +8,9 @@ if(!file_exists(ROOT_PATH . ".htaccess")){
 	fwrite($htaccessFile, "
 
 AddDefaultCharset UTF-8
-
 RewriteEngine On
 
-Rewrite .* index.php
+RewriteRule .* index.php
 
 	"); // write to .htaccess
 
